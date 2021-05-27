@@ -4,7 +4,7 @@ use std::io::{Read, BufReader, BufRead};
 use std::path::Path;
 
 fn main() -> Result<(), csv::Error> {
-    let f = File::open("/home/alex/github/ITMO/linux_scripting/nginx_logs")?;
+    let f = File::open("nginx_logs")?;
     let f = BufReader::new(f);
 
     let mut res: i64 = 0;
