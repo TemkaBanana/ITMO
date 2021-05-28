@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="block1">
+<h1>List of Numbers</h1>
+<h2></h2>
+<p>{{args}}</p>
+
+<table border=1>
+<TR>
+   <TD>Number</TD>
+   <TD>Calculated</TD>
+   <TD>Locked</TD>
+   <TD>Result</TD>
+   <TD>Approx</TD>
+   <TD>time</TD>
+   <TD>time2</TD>
+</TR>
+{% for row in lst %}
+<TR>
+   <TD>{{row[4]}}</TD>
+   <TD>{{row[5]}}</TD>
+   <TD>{{row[6]}}</TD>
+   <TD>{{row[0]}}</TD>
+   <TD>{{row[1]}}</TD>
+   <TD>{{row[2]}}</TD>
+   <TD>{{row[3]}}</TD>
+</TR>
+{% endfor %}
+</table>
+ 
+</div>
+{% endblock %}
