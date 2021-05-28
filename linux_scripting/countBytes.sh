@@ -4,7 +4,7 @@ total=0
 regexp='^[0-9]*$'
 while read line
 	do
-	cleanLine="echo $line | sed 's/+ /+g'"
+	cleanLine="echo ${line//s+ /+}"
 	IFS=' ' read -ra array <<< "$cleanLine"
 	for((n=10; n>=0; n--))
 		do
