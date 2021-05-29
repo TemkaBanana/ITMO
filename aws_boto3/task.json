@@ -1,0 +1,9 @@
+{
+  "TaskName": "MyTask",
+  "ResourceType": "EC2",
+  "Action": "Terminate",
+  "Parameters": {
+    "AMIID": "id-fdd23423",
+    "InstanceType": "t2.small"
+  }
+}

@@ -30,6 +30,6 @@ for obj in s3.Bucket(BUCKET_NAME).objects.all():
     obj.delete()
 
 
-s3.Bucket(name=BUCKET_NAME).object_versions.delete(
+s3.Bucket(name=BUCKET_NAME).object_versions.delete()
 
 s3.Bucket(name=BUCKET_NAME).delete()
