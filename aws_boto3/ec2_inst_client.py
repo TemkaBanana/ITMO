@@ -12,12 +12,13 @@ sudo systemctl start httpd
 
 # launch instance
 instance = client.run_instances(
-    ImageId = '',
+    ImageId = 'ami-09bad377444821cb1',
     MaxCount = 1,
     MinCount = 1,
     KeyName = 'DevOps',
     InstanceType = 't2.micro',
-    SubnetId = '',
+    SubnetId = 'subnet-1c871344',
+    SecurityGroupIds = ["sg-820f27fa"],
     UserData = user_data,
 )
 
