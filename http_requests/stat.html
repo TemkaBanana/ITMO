@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <table border="1">
+   <tr>
+       <th>Task</th>
+       <th>Status</th>
+       <th>Result</th>
+       <th>Spent time (sec)</th>
+   </tr>
+      {% if result_list %}
+        {% for one_elem in result_list %}
+            <tr>
+                <td>{{one_elem[0]}}</td>
+                <td>{{one_elem[1]}}</td>
+                <td>{{one_elem[2]}}</td>
+                <td>{{one_elem[3]}}</td>
+            </tr>
+        {% endfor %}
+      {% endif %}
+ </table>
+</body>
+</html>
